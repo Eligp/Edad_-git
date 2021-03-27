@@ -27,9 +27,14 @@ public class Edad {
 		
 		edad=sc.nextInt();
 		
+		if (edad>=0){
+		
 		String resultado=mayordeEdad(edad);
 		
 		System.out.println("La edad introducida es: " + resultado);
+		}else
+		
+		System.out.println("El numero introducido no es valido");
 		
 	}
 }

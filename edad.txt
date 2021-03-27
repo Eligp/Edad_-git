@@ -1,0 +1,35 @@
+import java.util.*;
+public class Edad {
+
+/*se crea una clase para calcular si la edad introducida es mayor o menor de edad*/
+
+	public static String mayordeEdad(int a) {
+		
+		final int edad=18;
+		
+		
+		if(a>=edad) {
+			
+			return "mayor de edad";
+		}else
+			
+			return "menor de edad";
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int edad;
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Introduce la edad a comprobar");
+		
+		edad=sc.nextInt();
+		
+		String resultado=mayordeEdad(edad);
+		
+		System.out.println("La edad introducida es: " + resultado);
+		
+	}
+}
